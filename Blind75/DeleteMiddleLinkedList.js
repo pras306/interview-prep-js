@@ -16,6 +16,9 @@ function LinkedList(val, next) {
 }
 
 const deleteMiddle = function (head) {
+    if (head.next === null) return null;
+
+
     let left = 0;
     let right = 0;
     let node = head;
